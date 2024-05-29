@@ -1,0 +1,40 @@
+<h2>Please select a service</h2>
+<body>
+<mat-card class="Lashes-card">
+    <mat-card-header>
+      <mat-card-title>Lashes</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>This card indeterminates progress bar.</p>
+      <p>{{Lashes}}</p>
+     
+    </mat-card-content>
+
+    <mat-card-actions>
+    
+    <button mat-button (click)="selectedService(1)"><mat-card-subtitle class="prices">$60</mat-card-subtitle>Classic</button>
+   
+    <button mat-button (click)="selectedService(2)"><mat-card-subtitle class="prices">$80</mat-card-subtitle>Hybrid</button>
+   
+    <button mat-button (click)="selectedService(3)"><mat-card-subtitle class="prices">$100</mat-card-subtitle>Volume</button>
+   
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="Fills-card">
+    <mat-card-header>
+      <mat-card-title>Fills</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>This card indeterminates progress bar.</p>
+      <p>{{fills}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      
+    <button mat-button value="1"><mat-card-subtitle class="prices">$35</mat-card-subtitle>Classic</button>
+    <button mat-button value="2"><mat-card-subtitle class="prices">$45</mat-card-subtitle>Hybrid</button>
+    <button mat-button value="3"><mat-card-subtitle class="prices">$55</mat-card-subtitle>Volume</button>
+    </mat-card-actions>
+  </mat-card>

@@ -1,0 +1,40 @@
+<form (ngSubmit)="submitAppointment()">
+    <h2>Book an Appointment</h2>
+    <div class="form-group">
+       <mat-form-field>
+        <mat-label for="name">Name </mat-label>
+        <input matInput type="text" id="Name" [(ngModel)]="Name" name="Name" required>
+       </mat-form-field>
+      
+    </div>
+
+    <div class="form-group">
+        <mat-form-field>
+            <mat-label for="description">Description </mat-label>
+            <input matInput type="text" id="Description" [(ngModel)]="Description" name="Description" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-group">
+    <mat-form-field>
+        <mat-label for="ContactInfo">ContactInfo</mat-label>
+        <input matInput type="text" id="ContactInfo" [(ngModel)]="ContactInfo" name="ContactInfo" required>
+    </mat-form-field>
+    </div>
+
+     <div class="form-group">
+      <mat-form-field>
+
+     <mat-label for="Date">Date</mat-label>
+     <input matInput type="date" id="Date" [(ngModel)]="Date" name="Date" required>
+     
+      </mat-form-field>  
+
+    </div>
+    
+
+    
+    
+    <button type="submit"> Book 💾</button>
+    <button type="button">Cancel 🚫</button>
+</form>
